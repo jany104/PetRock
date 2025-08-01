@@ -12,8 +12,10 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #333;
+  border-bottom-left-radius:10px ;
+  border-bottom-right-radius:10px ;
   color: white;
-  height: 80px; /* Modified: Increased height */
+  height: 65px; /* Modified: Increased height */
   margin: 0;     /* Modified: Removed extra margin */
 }
 
@@ -21,6 +23,11 @@ body {
   margin-left: 20px;
   color: white;
   text-decoration: none;
+}
+.logo{
+  font-size: 30px;
+  font-weight: 900;
+  font-family:'fredoka',sans-serif;
 }
 
 .nav-links a:hover {
