@@ -1,11 +1,11 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# PET ROCK CARE SYSTEM 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: NullHack
 
 
 ### Team Members
@@ -14,13 +14,32 @@
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+Welcome to the pinnacle of pointless innovation! This is a completly unnecessary system for caring for your pet rock, Does your rock need to be hydrated? Nope. Does it have feelings? Probably not. Does it need a software dashboard and a webcam to tell you it's contemplative? Absolutly not. And yet, here we are.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Have you ever stared at a rock and thought,
+"Is it... emotionally hydrated?"
+
+No? Of course you haven’t.
+
+But what if—just what if—that silent chunk of Earth was secretly begging for a sprinkle of water, a cozy temperature, and a little emotional validation?
+
+In a world overflowing with smart devices, we boldly asked:
+“Why not make a smart system for the dumbest possible pet?”
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Introducing the Pet Rock Care Dashboard:
+The ultimate (and totally unnecessary) toolkit for the most sedentary companion in your life.
+
+ Scan your rock for vibes.
+ Hydrate it with the click of a button.
+ Monitor its fake ambient temperature.
+ Recommend daily activities like "staring blankly at a wall."
+
+Is it useful? No.
+Is it practical? Absolutely not.
+But is it gloriously over-engineered for a literal rock?
+Yes. Yes it is.
 
 ## Technical Details
 ### Technologies/Components Used
