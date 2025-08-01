@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #e0f7fa, #fff1f5);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.hydration-container {
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: auto;
+  border: 6px dotted #4dd0e1;
+  border-radius: 25px;
+  background-color: #ffffffdd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3.2em;
+  color: #0097a7;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.rock-image img {
+  width: 140px; /* Made smaller */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.rock-image img:hover {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+.hydration-box {
+  margin-top: 35px;
+  background: #e1f5fe;
+  border: 2px dashed #81d4fa;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.hydration-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #007acc;
+}
+
+.hydration-bar {
+  width: 85%;
+  height: 35px;
+  background-color: #b2ebf2;
+  border-radius: 15px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.water-fill {
+  width: 65%; /* You can change this % to simulate hydration */
+  height: 100%;
+  background-color: #4dd0e1;
+  animation: fillWave 2s infinite alternate ease-in-out;
+}
+
+@keyframes fillWave {
+  0% { width: 63%; }
+  100% { width: 68%; }
+}
+
+.note {
+  font-style: italic;
+  color: #00796b;
+  font-size: 1.2em;
+}
+
+.water-animation {
+  font-size: 2.5rem;
+  margin-top: 25px;
+  animation: splashy 1s infinite;
+}
+
+@keyframes splashy {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-8px); opacity: 0.7; }
+  100% { transform: translateY(0); opacity: 1; }
+}

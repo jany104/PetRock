@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌡️ Ambient Rock Temperature Monitor</title>
+  <link rel="stylesheet" href="../css/temp.css" />
+</head>
+<body>
+  <div class="temp-container">
+    <h1> Rock Climate Dashboard</h1>
+    <p class="tagline">Simulating thermal vibes... because why not?</p>
+
+    <div class="rock-image">
+      <img src="../images/download.jpeg" alt="Concerned Rock" />
+    </div>
+
+    <div class="temp-box">
+      <p class="label">Ambient Temperature:</p>
+      <div class="temp-value" id="tempDisplay">--°C</div>
+      <p class="range-label">Optimal Range: 20°C – 30°C</p>
+      <p class="status-message" id="tempStatus">Checking atmosphere...</p>
+    </div>
+
+    <div class="warning" id="tempWarning">🚨 Sub-Optimal Rock Conditions Detected!</div>
+
+    <div class="btn-wrapper">
+      <button onclick="generateMockTemperature()">🔁 Simulate Temperature</button>
+    </div>
+  </div>
+
+  <script src="temp.js"></script>
+</body>
+</html>
