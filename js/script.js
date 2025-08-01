@@ -31,17 +31,32 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCarousel();
 });
 
-function triggerUpload() {
-  document.getElementById("fileInput").click();
-}
-
-// Optional: to store whether user uploaded (for future features)
 let isPhotoUploaded = false;
 
-document.getElementById("fileInput").addEventListener("change", function () {
-  if (this.files.length > 0) {
+function triggerPhotoUpload() {
+  document.getElementById('photoInput').click();
+}
+
+function handlePhotoUpload() {
+  const input = document.getElementById('photoInput');
+  if (input.files.length > 0) {
     isPhotoUploaded = true;
-    alert("Photo uploaded successfully! ✅");
-    // You can call other unlocking functions here
+    const msgBox = document.getElementById('uploadMessage');
+    msgBox.textContent = "✅ Photo uploaded! You can now access the features.";
+    msgBox.style.color = "green";
   }
-});
+}
+
+function checkUpload() {
+  if (!isPhotoUploaded) {
+    const msgBox = document.getElementById('uploadMessage');
+    msgBox.textContent = "⚠️ Please upload your pet rock first!";
+    msgBox.style.color = "red";
+    return false; // prevent redirection
+  }
+  return true; // allow redirection
+}
+
+
+
+
