@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e1f5fe, #fce4ec);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.mood-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px 20px;
+  background-color: #fffafc;
+  border: 5px dotted #f48fb1;
+  border-radius: 25px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 2.6em;
+  color: #ec407a;
+}
+
+.tagline {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: #6a1b9a;
+}
+
+.rock-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f48fb1;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rock-image img:hover {
+  transform: scale(1.05);
+}
+
+.scan-note {
+  font-size: 0.9em;
+  color: #9c27b0;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.mood-box {
+  background: #fce4ec;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px dashed #f06292;
+}
+
+.label {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ad1457;
+}
+
+.mood-state {
+  font-size: 1.8em;
+  color: #d81b60;
+  margin-bottom: 10px;
+}
+
+.mood-joke {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #4a148c;
+}
+
+.btn-wrapper {
+  margin-top: 30px;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  background-color: #f06292;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ec407a;
+}
