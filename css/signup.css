@@ -1,0 +1,44 @@
+body {
+  background: #fefefe;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 50px;
+  color: #222;
+}
+
+.sign-container {
+  background: #fff0f5;
+  border: 3px dashed pink;
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+}
+
+.sign-submit {
+  background: #ff1493;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-submit:hover {
+  background: #ff69b4;
+  transform: rotate(-2deg);
+}
+
+.footnote {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
