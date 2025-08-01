@@ -13,24 +13,26 @@ body {
   padding: 1rem 2rem;
   background-color: #333;
   color: white;
-  height:10%;
-  margin: 2px;
+  height: 80px; /* Modified: Increased height */
+  margin: 0;     /* Modified: Removed extra margin */
 }
+
 .nav-links a {
   margin-left: 20px;
   color: white;
   text-decoration: none;
 }
+
 .nav-links a:hover {
   text-decoration: underline;
 }
 
-
+/* Carousel container */
 .carousel-container {
-  padding-top: 4px !important;
-  padding-bottom: 5%;
+  padding-top: 10px !important; /* Modified: Reduced space */
+  padding-bottom: 40px;         /* Modified: Reduced bottom space */
   position: relative;
-  height:60vh;
+  height: 45vh;                 /* Modified: Reduced height */
   width: 100%;
   max-width: 9000px;
   overflow: hidden;
@@ -39,25 +41,38 @@ body {
   background: #fff;
 }
 
+/* Carousel inner */
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
+/* Each slide */
 .slide {
   display: flex;
   min-width: 100%;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px;
+  justify-content: flex-start; /* Modified: align content to left */
+  gap: 30px;                   /* Modified: spacing between image and text */
+  padding: 20px;               /* Modified: tighter padding */
 }
 
+/* Rock image */
+.pic {
+  width: 25% !important;       /* Modified: Smaller and better fit */
+  height: auto !important;     /* Modified: Maintain aspect ratio */
+  margin-right: 20px;
+  display: block;
+}
+
+/* Slide image (used elsewhere?) */
 .slide img {
-  width: 40%;
+  width: 30%;
   height: auto;
   border-radius: 15px;
 }
 
+/* Text container */
 .text-box {
   width: 50%;
   padding: 20px;
@@ -74,6 +89,7 @@ body {
   line-height: 1.5;
 }
 
+/* Carousel buttons */
 #prevBtn, #nextBtn {
   position: absolute;
   top: 45%;
@@ -96,6 +112,7 @@ body {
   right: 10px;
 }
 
+/* Responsive view */
 @media screen and (max-width: 768px) {
   .slide {
     flex-direction: column;
@@ -106,14 +123,18 @@ body {
     width: 100%;
     text-align: center;
   }
+
+  .pic {
+    width: 60% !important;
+    margin: 0 auto;
+  }
 }
 
-
+/* Features section */
 .feature-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
- 
   padding: 30px;
   background: #ffffff;
   border-radius: 20px;
@@ -123,7 +144,7 @@ body {
 .feature-box {
   max-width: 1100px !important;
   height: 27vh !important;
-  width:25vw ;
+  width: 25vw;
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
   border-radius: 15px;
   padding: 30px;
@@ -139,6 +160,7 @@ body {
   transform: translateY(-8px);
 }
 
+/* Scanner box */
 .scan-box {
    background: #d4fc79; /* fallback */
   background: linear-gradient(to right, #96e6a1, #d4fc79);
@@ -150,12 +172,4 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-}
-
-
-
-.pic{
-    width: 35% !important;
-    height: 60% !important;
-
 }
