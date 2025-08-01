@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Mood Analyzer</title>
+  <link rel="stylesheet" href="../css/mood.css" />
+</head>
+<body>
+  <div class="mood-container">
+    <h1>🪨 Emotional State Analyzer</h1>
+    <p class="tagline">Analyzing emotional wavelengths from shared rock scan...</p>
+
+    <div class="rock-image">
+      <img src="download.png" alt="Shared Rock Scan" />
+      <p class="scan-note">[Using global scan input for simulated mood detection]</p>
+    </div>
+
+    <div class="mood-box">
+      <p class="label">Current Mood:</p>
+      <p class="mood-state" id="moodText">[No mood detected yet]</p>
+      <p class="mood-joke" id="jokeText">Click analyze to read your rock’s soul 🧠</p>
+    </div>
+
+    <div class="btn-wrapper">
+      <button onclick="analyzeMood()">🧪 Analyze Mood</button>
+    </div>
+  </div>
+
+  <script src="../js/mood.js"></script>
+</body>
+</html>
