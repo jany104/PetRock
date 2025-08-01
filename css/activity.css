@@ -1,0 +1,94 @@
+/* General body styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fff9c4, #ffe0b2);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  color: #4e342e;
+}
+
+/* Container for all content */
+.activity-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px 20px;
+  background-color: #fff8e1;
+  border: 5px dashed #ffcc80;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Main heading */
+h1 {
+  font-size: 2.8em;
+  color: #ef6c00;
+}
+
+/* Subheading */
+.tagline {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+  color: #6d4c41;
+}
+
+/* Rock image styling */
+.rock-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffcc80;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Fun hover scale */
+.rock-image img:hover {
+  transform: scale(1.08);
+}
+
+/* Activity box container */
+.activity-box {
+  background: #ffe082;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px dashed #ffb300;
+}
+
+/* Label above activity */
+.label {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Activity suggestion text */
+.activity-text {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #5d4037;
+  margin: 0;
+}
+
+/* Button container */
+.btn-wrapper {
+  margin-top: 30px;
+}
+
+/* Button styles */
+button {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background-color: #ffb74d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffa726;
+}
