@@ -1,18 +1,36 @@
-  // Randomly generate a hydration percentage between 30% and 95%
-  const randomHydration = Math.floor(Math.random() * 66) + 30;
-  const waterFill = document.querySelector(".water-fill");
-  waterFill.style.width = randomHydration + "%";
+let hydrationLevel = 50; // Initial hydration level
 
-  // Optional: update the note text based on the hydration level
-  const note = document.querySelector(".note");
-  if (randomHydration < 40) {
-    note.textContent = "Warning: Rock is feeling a bit dry 😬";
-    note.style.color = "#d32f2f";
-  } else if (randomHydration < 60) {
-    note.textContent = "Hydration okay, but could use a splash 💦";
-    note.style.color = "#f57c00";
-  } else {
-    note.textContent = "Watered recently! Your rock is thriving 🌱";
-    note.style.color = "#00796b";
+const hydrationQuotes = [
+  { quote: "Feeling refreshed like a mountain spring!", type: "positive" },
+  { quote: "A bit soggy, but in a zen way.", type: "positive" },
+  { quote: "Hydration level: puddle-perfect.", type: "positive" },
+  { quote: "Rock has seen better drops.", type: "neutral" },
+  { quote: "Moist but modest.", type: "neutral" },
+  { quote: "Still crunchy... but surviving.", type: "neutral" },
+  { quote: "Rock cries for rain.", type: "dehydrated" },
+  { quote: "Dry as a desert drama.", type: "dehydrated" },
+  { quote: "Somewhere between drought and despair.", type: "dehydrated" },
+];
+
+function waterRock() {
+  const quoteObj = hydrationQuotes[Math.floor(Math.random() * hydrationQuotes.length)];
+  const quote = quoteObj.quote;
+  const type = quoteObj.type;
+
+  // Adjust hydration level based on quote type
+  if (type === "positive") {
+    hydrationLevel = Math.min(100, hydrationLevel + Math.floor(Math.random() * 10 + 5)); // +5 to +14
+  } else if (type === "neutral") {
+    hydrationLevel += Math.floor(Math.random() * 3) - 1; // -1 to +1
+  } else if (type === "dehydrated") {
+    hydrationLevel = Math.max(0, hydrationLevel - Math.floor(Math.random() * 10 + 5)); // -5 to -14
   }
 
+  const now = new Date();
+  const timeStr = now.toLocaleTimeString();
+  const dateStr = now.toLocaleDateString();
+
+  document.getElementById("hydrationLevel").textContent = `Hydration Level: 💧 ${hydrationLevel}%`;
+  document.getElementById("lastWatered").textContent = `Last Watered: ${timeStr} on ${dateStr}`;
+  document.getElementById("hydrationQuote").textContent = `"${quote}"`;
+}

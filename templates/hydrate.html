@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Pet Rock Hydration Vibes</title>
-  <link rel="stylesheet" href="../static/css/hydrate.css" />
+  <meta charset="UTF-8">
+  <title>💧 Hydrate Your Rock</title>
+  <link rel="stylesheet" href="../static/css/hydrate.css">
 </head>
 <body>
-  <div class="hydration-container">
-    <h1>Pet Rock Hydration Station </h1>
-    <p class="tagline">Keep your rock hydrated — emotionally, of course.</p>
+  <div class="container">
+    <h1>💦 Rock Hydration Station</h1>
 
-    <div class="rock-image">
-      <img src="../images/hydrate.jpg" alt="Happy Pet Rock" />
-    </div>
+    <!-- KEEPING YOUR IMAGE -->
+    <img src="../images/hydrate.jpg" alt="Pet Rock" class="rock-image">
 
-    <div class="hydration-box">
-      <p class="hydration-title">Hydration Level:</p>
-      <div class="hydration-bar">
-        <div class="water-fill"></div>
-      </div>
-      <p class="note">Watered recently! Your rock is thriving 🌱</p>
-    </div>
+    <p id="hydrationLevel">Hydration Level: 💧 50%</p>
+    <p id="lastWatered">Last Watered: Never</p>
+    <p id="hydrationQuote" class="quote">"Your rock is awaiting a splash of wisdom..."</p>
 
-    <div class="water-animation">
-      💧 💧 💧 💧 💧
-    </div>
+    <button onclick="waterRock()">🚿 Water Rock</button>
   </div>
+
   <script src="../js/hydrate.js"></script>
 </body>
 </html>
