@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Join the Fun!</title>
-  <link rel="stylesheet" href="../css/signup.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
 </head>
 <body>
   <div class="sign-container">
-    <h1>🦄 Welcome, Brave Human!</h1>
+    <h1>Welcome, Brave Human!</h1>
     <p>Let’s get you registered into the world of nonsense.</p>
-    <form action="/signup" method="POST">
-      <input type="text" name="username" placeholder="🧙 Username" class="sign-username" required>
-      <input type="email" name="email" placeholder="📧 Email (yes, real one)" class="sign-email" required>
-      <input type="password" name="password" placeholder="🔒 Secret Code (a.k.a Password)" class="sign-password" required>
-      <button type="submit" class="sign-submit">🚀 Sign Me Up!</button>
-      <a href="index.html" class="back-button">← Back to Home</a>
+
+    {% if message %}
+      <p style="color: red;">{{ message }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('signup') }}" method="POST">
+      <input type="text" name="username" placeholder=" Username" class="sign-username" required>
+      <input type="email" name="email" placeholder=" Email (yes, real one)" class="sign-email" required>
+      <input type="password" name="password" placeholder=" Secret Code (a.k.a Password)" class="sign-password" required>
+      <button type="submit" class="sign-submit"> Sign Me Up!</button>
+      <a href="{{ url_for('home') }}" class="back-button">← Back to Home</a>
     </form>
-    <p class="footnote" >Already part of this madness? <a href="login.html">Log in instead</a>.</p>
+
+    <p class="footnote">Already part of this madness? <a href="{{ url_for('login') }}">Log in instead</a>.</p>
   </div>
 </body>
 </html>
+
 

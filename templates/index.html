@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pet Rock</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
 
@@ -77,16 +77,19 @@
 
   <!-- Features + Scan -->
  <section class="feature-section">
-    <div class="feature-box">Let Your Rockiee get some Hydration</div>
-    <div class="feature-box">Let rockiee do smthng unwanted </div>
-    <div class="feature-box">temp</div>
-
-    <div class="scan-box" id="scanBox">
+   <a href="hydrate.html" style="text-decoration: none;"> <div class="feature-box">Let Your Rockiee get some Hydration</div> </a>
+    <a href="activity.html" style="text-decoration: none;"> <div class="feature-box">Let rockiee do smthng unwanted </div> </a>
+     <a href="temp.html" style="text-decoration: none;"> <div class="feature-box">temp</div> </a>
+      <a href="mood.html" style="text-decoration: none;">  <div class="feature-box">mood</div> </a>
+    <div class="feature-box" >
   <div class="scan-inner">
-    <div class="scan-front">
-      <h3>Scan Rock</h3>
-      <p><button id="startScanBtn">Click to reveal mood!</button></p>
-    </div>
+   <div id="uploadBox" onclick="triggerUpload()">
+  <p>📷 Upload Pet Photo</p>
+</div>
+
+<!-- Hidden file input -->
+<input type="file" id="fileInput" accept="image/*" style="display: none;">
+
     <div class="scan-back">
       <video id="camerafeed" autoplay muted playsinline></video>
     </div>
@@ -94,8 +97,8 @@
 </div>
 
 
-    <div class="feature-box">Virtual Petting</div>
-    <div class="feature-box">Scan</div>
+     
+      <a href="#" style="text-decoration: none;"> <div class="feature-box">extra feact</div> </a>
 
   </section>
 

@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Logon to the Chaos</title>
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
   <div class="logon-container">
     <h1>🔐 Return of the Memeber</h1>
     <p>Log in to do absolutely nothing productive.</p>
-    <form action="/login" method="POST">
+    
+    <form action="{{ url_for('login') }}" method="POST">
       <input type="text" name="username" placeholder="🧛 Your Weird Username" class="sign-username" required>
       <input type="password" name="password" placeholder="🙈 Super Secret Password" class="sign-password" required>
       <button type="submit" class="sign-login">🌀 Enter the Void</button>
-      <a href="index.html" class="back-button">← Back to Home</a>
+      <a href="{{ url_for('home') }}" class="back-button">← Back to Home</a>
     </form>
-    <p class="footnote">New to the circus? <a href="signup.html">Sign up now</a>.</p>
+    
+    <p class="footnote">New to the circus? <a href="{{ url_for('signup') }}">Sign up now</a>.</p>
   </div>
 </body>
 </html>
