@@ -2,55 +2,53 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: lightgrey;
+  background-color: #F4F1EB; /* Light crème for soft background */
 }
 
 /* Navbar */
 .navbar {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  border-bottom-left-radius:10px ;
-  border-bottom-right-radius:10px ;
-  color: lightgrey;
-  height: 65px; /* Modified: Increased height */
-  margin: 0;     /* Modified: Removed extra margin */
+  background-color: #4B3F72; /* Deep violet for elder rock vibe */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #FCECC9; /* Pale gold text */
+  height: 65px;
+  margin: 0;
 }
 
 .nav-links a {
   margin-left: 20px;
-  color: white;
- 
+  color: #FFFACD;
   text-decoration: none;
   transition: all .3s ease-in-out;
 }
-.logo{
+
+.logo {
   font-size: 30px;
   font-weight: 900;
-  font-family:'fredoka',sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .nav-links a:hover {
   font-size: 25px;
-  
+  color: #FFD700; /* Golden glow hover */
 }
-
 
 /* Carousel container */
 .carousel-container {
-  padding-top: 10px !important; /* Modified: Reduced space */
-  padding-bottom: 40px;         /* Modified: Reduced bottom space */
+  padding-top: 10px !important;
+  padding-bottom: 40px;
   position: relative;
-  height: 60vh;                 /* Modified: Reduced height */
+  height: 60vh;
   width: 100%;
   max-width: 9000px;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: #FFFDF9;
 }
 
 /* Carousel inner */
@@ -64,20 +62,20 @@ body {
   display: flex;
   min-width: 100%;
   align-items: center;
-  justify-content: flex-start; /* Modified: align content to left */
-  gap: 30px;                   /* Modified: spacing between image and text */
-  padding: 20px;               /* Modified: tighter padding */
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px;
 }
 
 /* Rock image */
 .pic {
-  width: 25% !important;       /* Modified: Smaller and better fit */
-  height: auto !important;     /* Modified: Maintain aspect ratio */
+  width: 25% !important;
+  height: auto !important;
   margin-right: 20px;
   display: block;
 }
 
-/* Slide image (used elsewhere?) */
+/* Slide image */
 .slide img {
   width: 30%;
   height: auto;
@@ -91,18 +89,17 @@ body {
 }
 
 .text-box h2 {
-  color: #333;
+  color: #2C2C2C;
   margin-bottom: 10px;
   font-size: 40px;
-  font-family:'chewy',cursive;
+  font-family: 'Chewy', cursive;
 }
 
 .text-box p {
-  font-size: 1.1rem;
+  font-size: 19px;
   color: #555;
   line-height: 1.5;
-  font-size: 19px;
-  font-family: 'pacifico',cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 /* Carousel buttons */
@@ -110,8 +107,8 @@ body {
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.3);
-  color:white;
+  background-color: rgba(75, 63, 114, 0.7); /* Violet semi-transparent */
+  color: white;
   border: none;
   font-size: 2rem;
   padding: 10px;
@@ -152,35 +149,38 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 30px;
-  background: lightgray;
+  background: #EAEAEA; /* Soft grey */
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .feature-box {
   max-width: 1100px !important;
   height: 27vh !important;
   width: 25vw;
-  background: linear-gradient(135deg, lightblue), lightblue );
+  background: linear-gradient(135deg, #A3D2CA, #F7FFF7); /* Mint and soft white */
   border-radius: 15px;
   padding: 30px;
   text-align: center;
   font-weight: bold;
   font-size: 1.1rem;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  color: #1A1A1A;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 
 .feature-box:hover {
   transform: translateY(-8px);
+  background: linear-gradient(135deg, #5EAAA8, #A3D2CA); /* On hover: deeper teal */
+  color: white;
 }
 
 /* Scanner box */
 .scan-box {
-   background: #d4fc79; /* fallback */
-  background: linear-gradient(to right, lightblue, lightblue);
+  background: linear-gradient(to right, #A3D2CA, #F4F1EB); /* Mint to crème */
   box-shadow: 0 6px 12px rgba(16, 15, 15, 0.081);
+  border-radius: 15px;
 }
 
 #cameraFeed {
