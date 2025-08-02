@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f7f7;
+  background-color: lightgrey;
 }
 
 /* Navbar */
@@ -15,7 +15,7 @@ body {
   background-color: #333;
   border-bottom-left-radius:10px ;
   border-bottom-right-radius:10px ;
-  color: white;
+  color: lightgrey;
   height: 65px; /* Modified: Increased height */
   margin: 0;     /* Modified: Removed extra margin */
 }
@@ -106,7 +106,7 @@ body {
   top: 45%;
   transform: translateY(-50%);
   background-color: rgba(0,0,0,0.3);
-  color: white;
+  color:white;
   border: none;
   font-size: 2rem;
   padding: 10px;
@@ -147,7 +147,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 30px;
-  background: #ffffff;
+  background: lightgray;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
@@ -156,7 +156,7 @@ body {
   max-width: 1100px !important;
   height: 27vh !important;
   width: 25vw;
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background: linear-gradient(135deg, lightblue), lightblue );
   border-radius: 15px;
   padding: 30px;
   text-align: center;
@@ -174,8 +174,8 @@ body {
 /* Scanner box */
 .scan-box {
    background: #d4fc79; /* fallback */
-  background: linear-gradient(to right, #96e6a1, #d4fc79);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(to right, lightblue, lightblue);
+  box-shadow: 0 6px 12px rgba(16, 15, 15, 0.081);
 }
 
 #cameraFeed {
