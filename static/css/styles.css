@@ -38,6 +38,7 @@ body {
   
 }
 
+
 /* Carousel container */
 .carousel-container {
   padding-top: 10px !important; /* Modified: Reduced space */
@@ -92,12 +93,16 @@ body {
 .text-box h2 {
   color: #333;
   margin-bottom: 10px;
+  font-size: 40px;
+  font-family:'chewy',cursive;
 }
 
 .text-box p {
   font-size: 1.1rem;
   color: #555;
   line-height: 1.5;
+  font-size: 19px;
+  font-family: 'pacifico',cursive;
 }
 
 /* Carousel buttons */
