@@ -75,25 +75,54 @@
   </div>
 
 
-  <!-- Features + Scan -->
- <section class="feature-section">
-   <a href="hydrate.html" style="text-decoration: none;"> <div onclick="checkUpload('hydrate.html')"  class="feature-box" >Let Your Rockiee get some Hydration</div> </a>
-    <a href="activity.html" style="text-decoration: none;"> <div onclick="checkUpload('activity.html')" class="feature-box">Let rockiee do smthng unwanted </div> </a>
-     <a href="temp.html" style="text-decoration: none;"> <div  onclick="checkUpload('temp.html')"  class="feature-box">temp</div> </a>
-      <a href="mood.html" style="text-decoration: none;">  <div onclick="checkUpload('mood.html')" class="feature-box">mood</div> </a>
-    <div class="feature-box scan-box" >
-<div id="upload-box" class="scan-box">
-  <input type="file" id="photoInput" accept="image/*" hidden onchange="handlePhotoUpload()">
-  <div onclick="triggerPhotoUpload()">📷 Upload Your Pet Rock</div>
-  <div id="uploadMessage" style="margin-top: 10px; color: red;"></div> 
-</div>
-</div>
+<!-- Features + Scan -->
+<section class="feature-section">
 
+  <a href="hydrate.html" style="text-decoration: none;"> 
+    <div onclick="checkUpload('hydrate.html')" class="feature-box">
+      <img src="../images/hydrate.jpg" class="feature-img" alt="">
+      Time for a Cooldown
+    </div> 
+  </a>
 
-     
-  <a href="#" style="text-decoration: none;"> <div class="feature-box">extra feact</div> </a>
+  <a href="activity.html" style="text-decoration: none;"> 
+    <div onclick="checkUpload('activity.html')" class="feature-box">
+      <img src="../images/download.png" class="feature-img" alt="Chaos">
+      Press for Chaos
+    </div> 
+  </a>
 
-  </section>
+  <a href="temp.html" style="text-decoration: none;"> 
+    <div onclick="checkUpload('temp.html')" class="feature-box">
+      <img src="../images/download.jpeg" class="feature-img" alt="Temperature">
+      Thermal Checkpoint
+    </div> 
+  </a>
+
+  <a href="mood.html" style="text-decoration: none;">  
+    <div onclick="checkUpload('mood.html')" class="feature-box">
+      <img src="../images/fun.jpg" class="feature-img" alt="">
+      Mood Monitor
+    </div> 
+  </a>
+
+  <div class="feature-box scan-box">
+    <div id="upload-box" class="scan-box">
+      <input type="file" id="photoInput" accept="image/*" hidden onchange="handlePhotoUpload()">
+      <div onclick="triggerPhotoUpload()">📷 Upload Your Pet Rock</div>
+      <div id="uploadMessage" style="margin-top: 10px; color: red;"></div> 
+    </div>
+  </div>
+
+  <a href="#" style="text-decoration: none;"> 
+    <div class="feature-box">
+      <img src="../images/facts.png" class="feature-img" alt="Extra Fact">
+      Extra Fact
+    </div> 
+  </a>
+
+</section>
+
 
   <script src="../js/script.js"></script>
 </body>
