@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🌡️ Ambient Rock Temperature Monitor</title>
+  <title>🌡 Ambient Rock Temperature Monitor</title>
   <link rel="stylesheet" href="../static/css/temp.css" />
 </head>
 <body>
@@ -22,13 +22,15 @@
       <p class="status-message" id="tempStatus">Checking atmosphere...</p>
     </div>
 
-    <div class="warning" id="tempWarning">🚨 Sub-Optimal Rock Conditions Detected!</div>
+    <div class="warning" id="tempWarning"> Sub-Optimal Rock Conditions Detected!</div>
+
+  
+    <div class="quote-box" id="quoteDisplay">🪨 Awaiting wisdom from the rock...</div>
 
     <div class="btn-wrapper">
       <button onclick="generateMockTemperature()">🔁 Simulate Temperature</button>
     </div>
   </div>
-
-  <script src="temp.js"></script>
+    <script src="../js/temp.js"></script>
 </body>
 </html>

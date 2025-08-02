@@ -1,9 +1,14 @@
 function generateMockTemperature() {
-  const temp = (Math.random() * 25 + 10).toFixed(1); // 10°C to 35°C
+  const temp = parseFloat((Math.random() * 25 + 10).toFixed(1)); // 10°C to 35°C
   const display = document.getElementById("tempDisplay");
   const status = document.getElementById("tempStatus");
   const warning = document.getElementById("tempWarning");
   const quoteDisplay = document.getElementById("quoteDisplay");
+
+  if (!display || !status || !warning || !quoteDisplay) {
+    console.error("Missing DOM elements! Please check your IDs.");
+    return;
+  }
 
   display.textContent = `${temp}°C`;
 
@@ -21,10 +26,10 @@ function generateMockTemperature() {
   const quotes = [
     "🪨 'I used to be sedimentary, now I'm emotionally layered.'",
     "💨 'I feel a breeze... or maybe it's just existential dread.'",
-    "🌡️ 'This isn't lava, it's just my hot takes.'",
-    "🧘‍♂️ 'Temperature is temporary, but my chill is eternal.'",
+    "🌡 'This isn't lava, it's just my hot takes.'",
+    "🧘‍♂ 'Temperature is temporary, but my chill is eternal.'",
     "🔥 'Geologically speaking, I’m melting right now.'",
-    "❄️ 'Cold? Me? I’m rock solid.'",
+    "❄ 'Cold? Me? I’m rock solid.'",
     "📡 'Sensors calibrated. Rock detected high sass levels.'",
     "💤 'Ambient temp = nap zone initiated.'"
   ];
@@ -33,5 +38,4 @@ function generateMockTemperature() {
   quoteDisplay.textContent = quotes[randomIndex];
 }
 
-// Run once when the page loads
-generateMockTemperature();
+//
