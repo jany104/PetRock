@@ -9,9 +9,9 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1:Jany Sabarinath  - GECT
+- Member 2:Vrindha P - GECT
+
 
 ### Project Description
 Welcome to the pinnacle of pointless innovation! This is a completly unnecessary system for caring for your pet rock, Does your rock need to be hydrated? Nope. Does it have feelings? Probably not. Does it need a software dashboard and a webcam to tell you it's contemplative? Absolutly not. And yet, here we are.
@@ -44,10 +44,10 @@ Yes. Yes it is.
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML, CSS , JS 
+- Flask
+- none
+- chatgpt
 
 For Hardware:
 - [List main components]
@@ -66,14 +66,32 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 080250" src="https://github.com/user-attachments/assets/fb3d13f7-521a-4bff-9cda-7fc75be6f166" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+It is the Homepage of our website
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 080258" src="https://github.com/user-attachments/assets/f15cddd8-1c3d-4de9-a7df-962c625fe2cf" />
+
+Home page showing features
+
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 080454" src="https://github.com/user-attachments/assets/627bbd59-2b61-491c-8b45-56340db9e977" />
+
+page to set our profile
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 080334" src="https://github.com/user-attachments/assets/47e47412-af3d-460e-9a86-664f476636ac" />
+
+page showing how much more hydration it needs
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 080351" src="https://github.com/user-attachments/assets/d96166e9-9f45-4017-a666-802a89248a61" />
+
+page showing random activites for our pet to do
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 080413" src="https://github.com/user-attachments/assets/227b64a5-ea9c-4c11-a549-fbde53cb4939" />
+
+page showing pet rocks current mood
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -100,7 +118,7 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+
 *Explain what the video demonstrates*
 
 # Additional Demos
